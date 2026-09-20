@@ -1,0 +1,55 @@
+
+================================================================
+PER-GROUP PERFORMANCE BY AGE BAND
+================================================================
+             count  accuracy  macro_F1  ATM_recall  Branch_recall  Online_recall
+CustomerAge                                                                     
+18-29        144.0     0.347     0.332       0.275          0.474          0.255
+30-44         95.0     0.358     0.351       0.269          0.448          0.350
+45-59        139.0     0.331     0.331       0.529          0.278          0.255
+60+          143.0     0.406     0.392       0.545          0.432          0.235
+
+overall : {'count': 521.0, 'accuracy': 0.361, 'macro_F1': 0.36, 'ATM_recall': 0.426, 'Branch_recall': 0.401, 'Online_recall': 0.27}
+max-min gap:
+   accuracy         0.075
+   macro_F1         0.061
+   ATM_recall       0.276
+   Branch_recall    0.196
+   Online_recall    0.115
+
+Binarised parity metrics (one-vs-rest), by age band:
+   channel      DP diff   EO diff      sel.rate range
+   ATM            0.168     0.276       0.264 - 0.432
+   Branch         0.220     0.235       0.273 - 0.493
+   Online         0.103     0.115       0.224 - 0.326
+
+================================================================
+PER-GROUP PERFORMANCE BY OCCUPATION
+================================================================
+                    count  accuracy  macro_F1  ATM_recall  Branch_recall  Online_recall
+CustomerOccupation                                                                     
+Doctor              128.0     0.391     0.378       0.605          0.333          0.239
+Engineer            141.0     0.312     0.301       0.235          0.333          0.339
+Retired             127.0     0.394     0.389       0.500          0.415          0.273
+Student             125.0     0.352     0.326       0.306          0.500          0.189
+
+overall : {'count': 521.0, 'accuracy': 0.361, 'macro_F1': 0.36, 'ATM_recall': 0.426, 'Branch_recall': 0.401, 'Online_recall': 0.27}
+max-min gap:
+   accuracy         0.082
+   macro_F1         0.088
+   ATM_recall       0.369
+   Branch_recall    0.167
+   Online_recall    0.150
+
+Binarised parity metrics (one-vs-rest), by occupation:
+   channel      DP diff   EO diff      sel.rate range
+   ATM            0.169     0.369       0.284 - 0.453
+   Branch         0.207     0.223       0.289 - 0.496
+   Online         0.155     0.163       0.200 - 0.355
+
+================================================================
+CONTROL: is the age disparity distinguishable from chance?
+================================================================
+observed accuracy gap across age bands : 0.075
+gap expected from random group labels  : 0.088 (95th pctile 0.157)
+permutation p-value                    : 0.599

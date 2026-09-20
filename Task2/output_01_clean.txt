@@ -1,0 +1,13 @@
+=== DATASET 1 (Channel, tuned Decision Tree) ===
+best params      : {'clf__criterion': 'entropy', 'clf__max_depth': 10, 'clf__min_samples_leaf': 10, 'clf__min_samples_split': 10}
+best CV macro F1 : 0.372   (report: 0.367)
+baseline acc/F1  : 0.34 0.169  (report: 0.340 / 0.169)
+tuned    acc/F1  : 0.361 0.36  (report: 0.370 / 0.361)
+
+=== DATASET 2 (Category, tuned Random Forest) ===
+best params      : {'clf__max_depth': 15, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 10, 'clf__min_samples_split': 5, 'clf__n_estimators': 100}
+best CV macro F1 : 0.182   (report: 0.182)
+baseline acc/F1  : 0.11 0.02  (report: 0.110 / 0.020)
+tuned    acc/F1  : 0.15 0.164  (report: 0.150 / 0.164)
+
+state saved.

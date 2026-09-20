@@ -1,0 +1,19 @@
+==================================================================
+DATASET 1 - Decision Tree (Channel)
+==================================================================
+configurations searched            : 72
+non-nested CV macro-F1 (reported)  : 0.372
+nested CV macro-F1 (unbiased)      : 0.354 (sd 0.017)
+optimism (non-nested - nested)     : +0.018
+outer fold scores                  : [0.362 0.344 0.348 0.332 0.382]
+spread across outer folds          : 0.050
+
+==================================================================
+DATASET 2 - Random Forest (Category)
+==================================================================
+configurations searched            : 96
+non-nested CV macro-F1 (reported)  : 0.182
+nested CV macro-F1 (unbiased)      : 0.176 (sd 0.021)
+optimism (non-nested - nested)     : +0.006
+outer fold scores                  : [0.163 0.146 0.211 0.178 0.181]
+spread across outer folds          : 0.064
