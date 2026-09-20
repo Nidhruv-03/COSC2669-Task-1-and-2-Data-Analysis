@@ -1,24 +1,22 @@
-# COSC2669 Individual Task 1 – Data Analysis
+# COSC2669 Individual Tasks 1 and 2 – Data Analysis
 
-This repository contains the machine learning analysis completed for Individual Task 1 in COSC2669 Case Studies in Data Science at RMIT University.
+This repository contains the machine-learning analysis used for Individual Task 1 and the methodological extensions completed for Individual Task 2 in COSC2669 Case Studies in Data Science at RMIT University.
 
-## Analysis
+## Task 1
+- `Task1_Data_Analysis.ipynb`
+- Original analysis of the banking transaction and personal finance datasets.
 
-Two publicly available financial datasets were analysed separately:
+## Task 2
+The `Task2/` folder contains:
+- reproduction of the Task 1 modelling pipeline
+- nested cross-validation
+- learning-curve analysis
+- Fairlearn-based bias analysis
+- terminal outputs used to verify reported results
+- final learning-curve figure
 
-- **Bank Transaction Dataset** – Decision Tree classification of transaction channel.
-- **Personal Finance Dataset** – Random Forest classification of spending category.
-
-The notebook includes data exploration, preprocessing, baseline models, model tuning, evaluation using Accuracy and Macro F1, confusion matrices, feature importance, and cross-dataset interpretation.
-
-## Files
-
-- `Task1_Data_Analysis.ipynb` – complete analysis notebook.
-
-## Dataset Sources
-
-Bank Transaction Dataset:  
-https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection/data
-
-Personal Finance Dataset:  
-https://www.kaggle.com/datasets/ramyapintchy/personal-finance-data/data
+The Task 2 scripts are:
+- `01_reproduce.py`
+- `02_fairness.py`
+- `03_learning_curves.py`
+- `04_nested_cv.py`
